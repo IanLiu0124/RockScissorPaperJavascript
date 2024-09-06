@@ -12,11 +12,11 @@ body{
 .board{
     display: flex;
     background-color: antiquewhite;
-    height: 350px;
-    width: 800px;
+    height: 30vw;
+    width: 50vw;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 1vw;
     flex-direction: column;
     border-radius: 20px 20px 0 0;
 
@@ -28,7 +28,7 @@ h2{
 .board2
 {
     background-color: antiquewhite;
-    width: 800px;
+    width: 50vw;
     display: flex;
     justify-content: center;
     border-radius: 0 0 20px 20px;
@@ -45,7 +45,7 @@ h2{
 {
     margin-top: 0px;
     border: 2px solid;
-    width: 200px;
+    width: 15vw;
     height: 90px;
     display: flex;
     /* justify-content: center; */
@@ -63,7 +63,7 @@ h2{
 #play
 {
     height: 35px;
-    width: 150px;
+    width: 10vw;
     background-color: antiquewhite;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
     cursor: pointer;
