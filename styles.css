@@ -18,7 +18,7 @@ body{
     align-items: center;
     gap: 1vw;
     flex-direction: column;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
 
 }
 h2{
@@ -27,7 +27,7 @@ h2{
 }
 .board2
 {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -81,7 +81,7 @@ h2{
     transform: translateY(0); /* No lift when button is pressed */
 }
 
-@media(max-width: 580px) {
+@media(max-width: 700px) {
     .board {
         height: auto;
         padding: 10px;
