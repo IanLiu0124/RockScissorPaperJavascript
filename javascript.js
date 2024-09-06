@@ -116,7 +116,7 @@ for(let i = 0; i < choice.length ; i++)
     let newButton = document.createElement("button")
     newButton.textContent = choice[i]
     newButton.style.backgroundColor = "antiquewhite"
-    newButton.style.width = "8vw"
+    newButton.style.width = "75px"
     newButton.style.fontSize = "1em"
     newButton.addEventListener('click', () => buttonGame(choice[i]))
     buttonselection.appendChild(newButton)
