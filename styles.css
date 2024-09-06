@@ -81,7 +81,7 @@ h2{
     transform: translateY(0); /* No lift when button is pressed */
 }
 
-@media(max-width: 480px) {
+@media(max-width: 580px) {
     .board {
         height: auto;
         padding: 10px;
