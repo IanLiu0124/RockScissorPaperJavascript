@@ -79,3 +79,44 @@ const playGame = () =>
 
 button.addEventListener('click', playGame);
 
+let buttonselection = document.getElementById("buttonselection");
+// buttonselection.appendChild(scissorChoice);
+
+const choice = ["Scissor", "Rock", "Paper"]
+console.log(choice)
+
+const buttonGame = (choice) =>
+{
+    let compDecision = compChoice();
+        if(choice == compDecision)
+            {
+                result.innerHTML = `Both player used ${compDecision}!<br>It's a Draw`
+            }
+            else if(choice == "Rock" && compDecision == "Scissor" ||
+                 choice == "Scissor" && compDecision == "Paper" ||
+                 choice == "Paper" && compDecision == "Rock")
+            {
+                result.innerHTML = `Player Wins!<br>You used ${choice} and the computer had ${compDecision}`
+                playerscore++
+            }
+            else
+            {
+                result.innerHTML = `Player Lose!<br>The computer had ${compDecision} and you had ${choice}`
+                computerscore++
+            }
+    
+        playerscoreresult.innerHTML = `Player Score: ${playerscore}`
+        computerscoreresult.innerHTML = `Computer Score: ${computerscore}`
+    
+}
+
+
+for(let i = 0; i < choice.length ; i++)
+{
+    let newButton = document.createElement("button")
+    newButton.textContent = choice[i]
+    newButton.addEventListener('click', () => buttonGame(choice[i]))
+    buttonselection.appendChild(newButton)
+};
+
+// scissorChoice.textContent = "Scissor";
