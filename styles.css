@@ -80,3 +80,24 @@ h2{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(0); /* No lift when button is pressed */
 }
+
+@media(max-width: 480px) {
+    .board {
+        height: auto;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .scoreboard div {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #play {
+        width: 100%;
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+}
